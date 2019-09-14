@@ -4,17 +4,36 @@
   <meta charset="UTF-8">
   <title>The best Crimea site</title>
   <style>
-    img {
-      width: 100%;
-    }  
-    body, 
-    img {
-      margin: 0;
-      padding: 0;
-    }  
+    body {
+      padding: 80px;
+      text-align: center;
+    }
+    button {
+      margin: 20px;
+
+      width: 200px;
+      height: 60px;
+      border-radius: 30px;
+
+      background: blue;
+
+      border: none;
+    }
+    button:hover {
+      background: mediumturquoise;
+    }
+    button:active {
+      background: darkblue;
+    }
+    button:focus {
+      outline: none;
+      border: 2px  solid black;
+    }
   </style>
 </head>
 <body>
-  <img src="img/sait_dlya_krima.jpg" alt="">
+  <button type="button">кнопка для ники</button>
+  <button type="button">еще одна</button>
+  <button type="button">и еще одна</button>
 </body>
 </html>

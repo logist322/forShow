@@ -2,44 +2,67 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>The best Crimea site</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0 10vw;
-      text-align: center;
-      height:  3000px;
-    }
-    
-    .menu {
-      background-color: black;
-      width: 100%;
-      height: 10vh;
-      color: white;
-      font-size: 9vh;
-    }
-
-    p {
-      display: block;
-      margin: auto;
-    }
-
-    .bar {
-      position: sticky;
-      position: -webkit-sticky;
-      top: 0; 
-      min-height: 4vh;
-      margin-top: -250px;
-      background-color: blueviolet;
-      width: 100%;
-      color: white;
-      font-size: 3vh;
-      z-index: -1;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Кот-Бегемот</title>
 </head>
 <body>
-  <div class="menu"><p>MENU</p></div>
-  <div class="bar"><P>MicroMENU</P></div>
+  <aside class="aside">
+    <div class="aside__container">
+      <button class="aside__burger" type="button"><span class="visually-hidden">Меню</span></button>
+      <a href="#" class="aside__cart"><span class="visually-hidden">Корзина</span></a>
+      <ul class="aside__social-list aside-social list-style-reset">
+        <li class="aside-social__item">
+          <a href="#" class="aside-social__link aside-social__link--vk"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li class="aside-social__item">
+          <a href="#" class="aside-social__link aside-social__link--fb"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li class="aside-social__item">
+          <a href="#" class="aside-social__link aside-social__link--inst"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+      </ul>
+      <a href="tel:88004598475" class="aside__call"><span class="visually-hidden">Позвонить</span></a>
+    </div>
+  </aside>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo-wrap">
+        <a href="index.html" class="header__logo">Кот-Бегемот</a>
+        <a href="#" class="header__button header__button--cart"><span class="visually-hidden">Корзина</span></a>
+        <a href="tel:88004598475" class="header__button header__button--call"><span class="visually-hidden">Позвонить</span></a>
+        <button class="header__burger" type="button"><span class="visually-hidden">Меню</span></button>
+      </div>
+      <nav class="header__nav nav header__nav--hidden">
+        <a href="#" class="nav__link">Акции</a>
+        <a href="#" class="nav__link">Доставка и оплата</a>
+        <a href="#" class="nav__link">Каталог</a>
+        <a href="#" class="nav__link">Контакты</a>
+      </nav>
+      <ul class="header__contacts-list contacts list-style-reset">
+        <li class="contacts__item contacts__item--address">
+          <a href="#" class="contacts__address">
+            Москва и Московская область
+            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.396 5.116l3.44-3.44a.56.56 0 10-.792-.792L4 3.928.956.884a.56.56 0 00-.792.792l3.44 3.44a.558.558 0 00.792 0z" fill="#212121"/></svg>
+          </a>
+        </li>
+        <li class="contacts__item contacts__item--phone">
+          <a href="tel:88004598475" class="contacts__phone">8 800 459 84 75</a>
+          <a href="#" class="contacts__order-call">Заказать звонок</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="js/menu.js"></script>
 </body>
 </html>
